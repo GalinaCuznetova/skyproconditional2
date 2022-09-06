@@ -46,11 +46,11 @@ public class Main {
         }
         //Задание 3.3
         System.out.println("Задание 3.3");
-        int year = 2021;
+        int year = 1700;
         int yearRemainder100 = year % 100;
         int yearRemainder400 = year % 400;
         int yearRemainder4 = year % 4;
-            if ((yearRemainder4 == 0) || (yearRemainder100 == 0 && yearRemainder400 == 0)) {
+            if (yearRemainder4 == 0 && yearRemainder100 != 0 || yearRemainder400 == 0) {
                 System.out.println("Год  високосный");
             } else {
                 System.out.println("Год не високосный");
